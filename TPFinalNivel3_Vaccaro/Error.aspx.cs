@@ -13,7 +13,7 @@ namespace TPFinalNivel3_Vaccaro
         {
             
             if(Session["error"] != null)
-                txtMensajeError.Text = Session["error"].ToString();
+                lblMensajeError.Text = Session["error"].ToString();
             
         }
     }

@@ -7,15 +7,15 @@
     <div class="row">
         <div class="col-3">
             <div class="mb-3">
-                <asp:Label for="txtUsuario" ID="lblUsuario" runat="server" Text="Usuario" CssClass="form-label"></asp:Label>
-                <asp:TextBox runat="server" ID="txtUsuario" CssClass="form-control" placeholder="nombre de usuario"></asp:TextBox>
+                <asp:Label for="txtUsuario" ID="lblEmail" runat="server" Text="Email" CssClass="form-label"></asp:Label>
+                <asp:TextBox runat="server" ID="txtEmail" CssClass="form-control" placeholder="ejemplo@mail.com"></asp:TextBox>
             </div>
             <div class="mb-3">
                 <asp:Label for="txtPassWord" ID="lblPassWord" runat="server" Text="PassWord" CssClass="form-label"></asp:Label>
-                <asp:TextBox runat="server" ID="txtPassWord" CssClass="form-control" type="password" placeholder="PassWord"></asp:TextBox>
+                <asp:TextBox runat="server" ID="txtPassWord" CssClass="form-control" type="password" placeholder="******"></asp:TextBox>
             </div>
             <div class="mb-3">
-                <asp:Button runat="server" ID="btnLogin" CssClass="btn btn-success" Text="Loguearse"/>
+                <asp:Button runat="server" ID="btnLogin" CssClass="btn btn-success" Text="Loguearse" OnClick="btnLogin_Click"/>
             </div>
         </div>
     </div>
