@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h2>Por el momento es la muestra de la base de datos</h2>
+    <!-- Esto es solo para mostrar como anda la BDD y trabajar sobre eso, mas al final del proyecto era modificado-->
     <div class="row">
         <asp:GridView ID="dvgProductos" runat="server" CssClass="table" AutoGenerateColumns="false">
             <Columns>

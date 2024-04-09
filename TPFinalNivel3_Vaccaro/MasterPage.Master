@@ -32,7 +32,14 @@
                         </li>
                     </ul>
                     <div class="d-flex">
-                        <asp:Button runat="server" ID="btnLoguearse" type="submit" CssClass="btn btn-outline-success" OnClick="btnLoguearse_Click" Text="Login"/>
+                        <%if (Session["user"] is null)
+                            { %>
+                        <asp:Button runat="server" ID="btnLoguearse" type="submit" CssClass="btn btn-outline-success" OnClick="btnLoguearse_Click" Text="Login" />
+                        <% } %>
+                        <% else
+                            { %>
+                        <asp:Button runat="server" ID="btnDesloguearse" type="submit" CssClass="btn btn-outline-danger" OnClick="btnDesloguearse_Click" Text="Salir" />
+                        <% } %>
                     </div>
                 </div>
             </div>

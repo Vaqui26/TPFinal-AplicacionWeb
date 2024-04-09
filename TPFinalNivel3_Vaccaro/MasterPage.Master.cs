@@ -18,5 +18,10 @@ namespace TPFinalNivel3_Vaccaro
         {
             Response.Redirect("Login.aspx", false);
         }
+
+        protected void btnDesloguearse_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+        }
     }
 }
